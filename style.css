@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(35, 35, 72);
+}
+   /* -- -- -- -- main container -- -- -- -- */
+.container{
+    border: 2px solid red;
+    border-color: transparent;
+    width: 500px;
+    height: 500px;
+    margin-top: 8%;
+    align-items: center;
+    justify-content: center;
+}
+   /* -- -- -- -- main container -- -- -- -- */
+   
+   /* --  --  --  -- clock template & animation -- -- -- -- */
+.clock{
+    border: 1px solid transparent;
+    background-color: rgb(22, 22, 79);
+    width: 350px;
+    height: 350px;
+    margin-top: 10%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+    color: rgb(126, 45, 232);
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+    @keyframes glow {
+        0%, 100%{
+            box-shadow: 10px 15px 30px 15px rgba(80, 128, 82, 0.5);
+        }
+        25%{
+            box-shadow: 15px 10px 35px 10px rgba(80, 128, 82, 0.5);
+        }
+        50%{
+            box-shadow: 10px 15px 33px 15px rgba(70, 137, 73, 0.6);
+        }
+        75%{
+            box-shadow: 15px 10px 33px 15px rgba(70, 137, 73, 0.6);
+        }
+     /* --  --  --  -- clock template & animation -- -- -- -- */
+} 
+    /* -- -- -- -- buttons -- -- -- -- */
+button{
+    height: 4rem;
+    width: 8rem;
+    margin: 10px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: .5px solid whitesmoke;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgb(131, 131, 72);
+    color: yellow;
+    border: yellow;
+}
+    /* -- -- -- -- buttons -- -- -- -- */
+
